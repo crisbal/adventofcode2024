@@ -5,15 +5,15 @@ import (
 	"testing"
 )
 
-const WANT_DAY_1 = -1
-const WANT_DAY_2 = -1
+const WANT_PART_1 = -1
+const WANT_PART_2 = -1
 
 //go:embed example.txt
 var example string
 
 func TestPart1(t *testing.T) {
 	input := parseInput(example)
-	want := WANT_DAY_1
+	want := WANT_PART_1
 	got := part1(input)
 	if got != want {
 		t.Errorf("got %d, want %d", got, want)
@@ -22,7 +22,7 @@ func TestPart1(t *testing.T) {
 
 func TestPart2(t *testing.T) {
 	input := parseInput(example)
-	want := WANT_DAY_2
+	want := WANT_PART_2
 	got := part2(input)
 	if got != want {
 		t.Errorf("got %d, want %d", got, want)
